@@ -7,10 +7,13 @@
 
 # testing
 /coverage
-
+yarn.lock
 # production
 /build
-
+firebase.json
+.firebaserc
+yarn.lock
+.firebase
 # misc
 .DS_Store
 .env.local
