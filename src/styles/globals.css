@@ -20,3 +20,7 @@ body {
   color: rgb(var(--foreground-rgb));
   font-family: 'Montserrat', sans-serif;
 }
+
+.align-center {
+  align-items: center;
+}
