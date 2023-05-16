@@ -26,7 +26,7 @@ export default function Hero() {
     ;(async () => {
       const AllRepos = await fetchRepos()
 
-      const jsmarencoRepo: Repo = AllRepos.find(
+      const jsmarencoRepo = AllRepos.find(
         (repo: Repo) => repo.name === 'jsmarenco'
       )
 

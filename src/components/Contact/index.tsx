@@ -12,27 +12,21 @@ export default function Contact() {
       <article className="flex align-middle justify-center">
         <div
           className="text-gray-600 border border-gray-600 w-12 mx-1 h-12 text-xl text-center p-2 rounded-full cursor-pointer hover:text-gray-300"
-          onClick={() =>
-            window.open(twitter, '_blank', 'noopener,noreferrer')
-          }
+          onClick={() => window.open(twitter, '_blank', 'noopener,noreferrer')}
         >
           <i className="fa-brands fa-twitter"></i>
         </div>
 
         <div
           className="text-gray-600 border border-gray-600 w-12 mx-1 h-12 text-xl text-center p-2 rounded-full cursor-pointer hover:text-gray-300"
-          onClick={() =>
-            window.open(github, '_blank', 'noopener,noreferrer')
-          }
+          onClick={() => window.open(github, '_blank', 'noopener,noreferrer')}
         >
           <i className="fa-brands fa-github"></i>
         </div>
 
         <div
           className="text-gray-600 border border-gray-600 w-12 mx-1 h-12 text-xl text-center p-2 rounded-full cursor-pointer hover:text-gray-300"
-          onClick={() =>
-            window.open(linkedin, '_blank', 'noopener,noreferrer')
-          }
+          onClick={() => window.open(linkedin, '_blank', 'noopener,noreferrer')}
         >
           <i className="fa-brands fa-linkedin-in"></i>
         </div>
