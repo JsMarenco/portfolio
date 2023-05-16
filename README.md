@@ -13,7 +13,7 @@ This is my personal portfolio built with Next.js and Tailwind CSS. It showcases 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/portfolio.git`
+1. Clone the repository: `git clone https://github.com/JsMarenco/portfolio`
 2. Navigate to the project directory: `cd portfolio`
 3. Install the dependencies: `npm install`
 
