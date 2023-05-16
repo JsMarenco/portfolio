@@ -15,7 +15,7 @@ export default function Projects() {
   }, [])
 
   return (
-    <section id="project" className="my-3 px-5">
+    <section id="projects" className="my-20 px-5">
       <h6 className="text-2xl text-center font-bold mb-3 text-gray-500">
         My projects
       </h6>
