@@ -30,9 +30,9 @@ export interface Repo {
 
 export const fetchRepos = async () => {
   const res = await fetch('https://api.github.com/users/jsmarenco/repos')
-  const data = await res.json()
+  const data: Repo[] = await res.json()
 
-  const Repos = data.filter((rawRepo: Repo) => {
+  const Repos: Repo[] = data.filter((rawRepo: Repo) => {
     if (rawRepo.description && rawRepo.description.includes(':0')) {
       rawRepo.description = rawRepo.description.replace(':0', '')
       return true
@@ -40,6 +40,8 @@ export const fetchRepos = async () => {
 
     return false
   })
+
+  Repos.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
 
   return Repos
 }
