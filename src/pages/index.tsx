@@ -41,7 +41,10 @@ export const fetchRepos = async () => {
     return false
   })
 
-  Repos.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+  Repos.sort(
+    (a, b) =>
+      new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+  )
 
   return Repos
 }
