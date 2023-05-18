@@ -40,7 +40,7 @@ export default function Projects() {
               .join(' ')}
           </h6>
 
-          <p className="text-sm">{project.description}</p>
+          <p className="text-sm text-gray-500">{project.description}</p>
 
           <div className="flex align-middle justify-start flex-wrap my-2">
             {project.topics.map((topic, index) => (
