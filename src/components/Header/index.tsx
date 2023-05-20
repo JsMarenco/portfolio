@@ -4,9 +4,12 @@ export default function Header() {
   const router = useRouter()
 
   return (
-    <header className="w-full h-11 flex align-center justify-between p-1">
+    <header className="w-full h-11 flex align-center justify-between sm:p-3">
       <div>
-        <span className="text-1xl" onClick={() => router.push('/')}>
+        <span
+          className="text-1xl cursor-pointer text-bold hover:text-gray-400 text-gray-700 hover:underline"
+          onClick={() => router.push('/')}
+        >
           JsMarenco
         </span>
       </div>
