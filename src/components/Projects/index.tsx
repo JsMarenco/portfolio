@@ -15,8 +15,11 @@ export default function Projects() {
   }, [])
 
   return (
-    <section id="projects" className="my-20 px-5">
-      <h6 className="text-2xl text-center font-bold mb-3 text-gray-500">
+    <section
+      id="projects"
+      className="w-full h-screen snap-center overflow-auto p-8 scrollbar-hide"
+    >
+      <h6 className="text-2xl text-center font-bold mb-3 text-gray-500 snap-center">
         My projects
       </h6>
 
@@ -29,7 +32,7 @@ export default function Projects() {
             onClick={() =>
               window.open(project.homepage, '_blank', 'noopener,noreferrer')
             }
-            className="text-gray-600 text-lg hover:text-gray-300 cursor-pointer font-bold capitalize mb-3"
+            className="hover:underline text-gray-600 text-lg hover:text-gray-400 cursor-pointer font-bold capitalize mb-3"
           >
             {project.name
               .replace(/[-_]/g, ' ')
@@ -55,7 +58,7 @@ export default function Projects() {
         </article>
       ))}
 
-      {loading && <h6 className="text-lg text-gray-600">Loading project...</h6>}
+      {loading && <h3 className="text-3xl text-center font-semibold my-5 text-gray-600 mx-auto">Loading project...</h3>}
     </section>
   )
 }
