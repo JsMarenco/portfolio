@@ -45,7 +45,9 @@ export default function Hero() {
       <div className="md:w-1/2 text-center md:text-left xs:mt-5">
         <span className="text-lg text-gray-600">{user.role}</span>
 
-        <h1 className="text-gray-600 text-7xl font-bold my-3">{user.name}</h1>
+        <h1 className="text-gray-600 text-5xl font-bold my-3 sm:text-7xl">
+          {user.name}
+        </h1>
 
         <p className="text-gray-600 text-sm mt-4"> {user.description} </p>
       </div>
