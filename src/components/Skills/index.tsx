@@ -8,13 +8,14 @@ import gitPng from '@/assets/git.png'
 import mongodbPng from '@/assets/mongodb.png'
 import muiPng from '@/assets/mui.png'
 import tailwindPng from '@/assets/tailwind.png'
-import reduxtoolkit from '@/assets/reduxtoolkit.png'
+import reduxtoolkitPng from '@/assets/reduxtoolkit.png'
+import jestPng from "@/assets/jest.png"
 
 export default function Skills() {
   return (
-    <section id="skills" className="my-20 px-5">
+    <section id="skills" className="w-full h-screen snap-center sm:p-8 p-4 overflow-auto scrollbar-hide">
       <h6 className="text-2xl text-center font-bold mb-3 text-gray-500">
-        My projects
+        My Skills
       </h6>
 
       <div className="flex align-top justify-center gap-3 flex-wrap max-w-xl mx-auto ">
@@ -31,7 +32,7 @@ export default function Skills() {
               className="mb-5 w-20 h-20 mx-auto"
             />
 
-            <p className="text-center text-gray-500">{skill.label}</p>
+            <p className="text-center text-gray-700 font-semibold">{skill.label}</p>
           </article>
         ))}
       </div>
@@ -78,6 +79,10 @@ const mySkills = [
   },
   {
     label: 'Redux Toolkit',
-    imageSrc: reduxtoolkit.src,
+    imageSrc: reduxtoolkitPng.src,
+  },
+  {
+    label: 'Jest',
+    imageSrc: jestPng.src,
   },
 ]
