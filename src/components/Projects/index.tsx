@@ -7,7 +7,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    ;(async () => {
+    ; (async () => {
       const repos = await fetchRepos()
       setProjects(repos)
       setLoading(false)
@@ -19,20 +19,20 @@ export default function Projects() {
       id="projects"
       className="w-full h-screen snap-center overflow-auto p-8 scrollbar-hide"
     >
-      <h6 className="text-2xl text-center font-bold mb-3 text-gray-500 snap-center">
+      <h6 className="text-2xl text-center font-bold mb-3 text-black snap-center">
         My projects
       </h6>
 
       {projects.map((project) => (
         <article
-          className="border border-gray-700 rounded-xl p-4 my-3 max-w-xl mx-auto"
+          className="border shadow-lg border-black rounded-xl p-4 my-3 max-w-xl mx-auto"
           key={project.homepage}
         >
           <h6
             onClick={() =>
               window.open(project.homepage, '_blank', 'noopener,noreferrer')
             }
-            className="hover:underline text-gray-600 text-lg hover:text-gray-400 cursor-pointer font-bold capitalize mb-3"
+            className="underline text-black text-[19px] hover:text-gray-400 cursor-pointer font-bold capitalize mb-3"
           >
             {project.name
               .replace(/[-_]/g, ' ')
@@ -43,22 +43,44 @@ export default function Projects() {
               .join(' ')}
           </h6>
 
-          <p className="text-sm text-gray-500">{project.description}</p>
+          <p className="text-black">{project.description}</p>
 
           <div className="flex align-middle justify-start flex-wrap my-2">
             {project.topics.map((topic, index) => (
               <span
-                className="text-[11px] text-center bg-gray-950 text-gray-300 py-1 px-3 m-1 rounded-xl capitalize"
+                className="text-[11px] text-center bg-black text-white py-1 px-3 m-1 rounded-xl capitalize"
                 key={index}
               >
                 {topic.replace(/[-_]/g, ' ')}
               </span>
             ))}
           </div>
+
+          {/* <button
+            className="w-8 h-8 border shadow-lg border-black rounded-full p-1 mr-2"
+            onClick={() =>
+              window.open(`https://github.com/JsMarenco/${project.name}`, '_blank', 'noopener,noreferrer')
+            }
+          >
+            <span>
+              <i className="fa-brands fa-github"></i>
+            </span>
+          </button>
+
+          <button
+            className="w-8 h-8 border shadow-lg border-black rounded-full p-1 mr-2"
+            onClick={() =>
+              window.open(project.homepage, '_blank', 'noopener,noreferrer')
+            }
+          >
+            <span>
+              <i className="fa-solid fa-eye"></i>
+            </span>
+          </button> */}
         </article>
       ))}
 
-      {loading && <h3 className="text-3xl text-center font-semibold my-5 text-gray-600 mx-auto">Loading project...</h3>}
+      {loading && <h3 className="text-3xl text-center font-semibold my-5 text-black mx-auto">Loading project...</h3>}
     </section>
   )
 }
