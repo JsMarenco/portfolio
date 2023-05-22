@@ -13,28 +13,30 @@ import jestPng from "@/assets/jest.png"
 
 export default function Skills() {
   return (
-    <section id="skills" className="w-full h-screen snap-center sm:p-8 p-4 overflow-auto scrollbar-hide">
-      <h6 className="text-2xl text-center font-bold mb-3 text-gray-500">
-        My Skills
-      </h6>
+    <section id="skills" className="w-full h-screen snap-center sm:p-8 p-4 overflow-auto scrollbar-hide block items-center justify-center sm:flex">
+      <div>
+        <h6 className="text-2xl text-center font-bold mb-3 text-black">
+          My Skills
+        </h6>
 
-      <div className="flex align-top justify-center gap-3 flex-wrap max-w-xl mx-auto ">
-        {mySkills.map((skill) => (
-          <article
-            key={skill.label}
-            className="p-3 rounded-xl border border-gray-500 flex-shrink-0"
-          >
-            <Image
-              src={skill.imageSrc}
-              alt={`${skill.label} skill image`}
-              width={90}
-              height={90}
-              className="mb-5 w-20 h-20 mx-auto"
-            />
+        <div className="flex align-top justify-center gap-3 flex-wrap max-w-xl mx-auto ">
+          {mySkills.map((skill) => (
+            <article
+              key={skill.label}
+              className="p-3 rounded-xl border border-black flex-shrink-0"
+            >
+              <Image
+                src={skill.imageSrc}
+                alt={`${skill.label} skill image`}
+                width={95}
+                height={95}
+                className="mb-5 w-20 h-20 mx-auto flex-shrink-0"
+              />
 
-            <p className="text-center text-gray-700 font-semibold">{skill.label}</p>
-          </article>
-        ))}
+              <p className="text-center text-black font-semibold">{skill.label}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   )
