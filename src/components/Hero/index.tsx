@@ -44,26 +44,26 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="flex align-center justify-center flex-col-reverse sm:flex-row w-full h-screen snap-center px-4 sm:px-8">
+    <section className="flex align-center justify-center flex-col-reverse w-full h-screen overflow-auto sm:flex-row max-w-[1200px] px-4 sm:px-6 mx-auto snap-center">
       <div className="md:w-1/2 text-center md:text-left mt-4 sm:mt-0">
-        <span className="text-lg text-gray-600">{user.role}</span>
+        <span className="text-lg font-semibold text-black">{user.role}</span>
 
-        <h1 className="text-gray-600 text-5xl font-bold my-3 sm:text-7xl">
+        <h1 className="text-black text-5xl font-bold my-3 sm:text-7xl">
           {user.name}
         </h1>
 
-        <p className="text-gray-600 text-sm mt-4"> {user.description} </p>
+        <p className="text-black text-ml leading-5 font-medium mt-4"> {user.description} </p>
 
-        <nav className="flex align-center justify-center sm:justify-start gap-2 mt-3">
+        <nav className="flex align-center justify-center flex-col sm:flex-row sm:justify-start gap-2 mt-3">
           <button
-            className="rounded-lg px-3 py-1 text-center text-black bg-white border border-black hover:bg-black hover:text-white"
+            className="rounded-xl px-4 py-2 w-[250px] sm:max-w-[150px] md:max-w-[200px] text-center text-black bg-white border border-black hover:bg-black hover:text-white"
             onClick={() => router.push('/#projects')}
           >
             <span>Projects</span>
           </button>
 
           <button
-            className="rounded-lg px-3 py-1 text-center text-white bg-black border border-black hover:bg-white hover:text-black"
+            className="rounded-xl px-4 py-2 w-[250px] sm:max-w-[150px] md:max-w-[200px] text-center text-white bg-black border border-black hover:bg-white hover:text-black"
             onClick={() => router.push('/#contact')}
           >
             <span>Contact</span>
