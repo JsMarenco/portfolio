@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Contact from "../Contact";
+import Image from 'next/image'
+import Contact from '../Contact'
 
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
-    <section className="w-full h-screen overflow-auto scrollbar-hide block sm:flex items-center justify-center snap-center py-4">
+    <section
+      id="contact"
+      className="w-full h-screen overflow-auto scrollbar-hide block sm:flex items-center justify-center snap-center py-4"
+    >
       <div className="flex items-center justify-center flex-col gap-4">
         <h6 className="text-2xl text-center font-bold text-black mx-auto">
           About
@@ -22,10 +25,10 @@ export default function About() {
         <p className="text-black font-medium leading-6 text-center max-w-[90%] sm:max-w-[650px] mx-auto">
           Hello, I'm Angel Marenco, a full stack developer with two years of
           experience. I specialize in ReactJS, NextJS, and TypeScript and enjoy
-          creating and maintaining web applications. When I'm not working, I enjoy
-          constantly improving my skills. In my free time, I'm happy to share my
-          expertise in both areas to help others. In the future, I plan to
-          continue expanding my programming knowledge.
+          creating and maintaining web applications. When I'm not working, I
+          enjoy constantly improving my skills. In my free time, I'm happy to
+          share my expertise in both areas to help others. In the future, I plan
+          to continue expanding my programming knowledge.
         </p>
 
         <Contact />
