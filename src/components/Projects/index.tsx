@@ -7,7 +7,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    ; (async () => {
+    ;(async () => {
       const repos = await fetchRepos()
       setProjects(repos)
       setLoading(false)
@@ -80,7 +80,11 @@ export default function Projects() {
         </article>
       ))}
 
-      {loading && <h3 className="text-3xl text-center font-semibold my-5 text-black mx-auto">Loading project...</h3>}
+      {loading && (
+        <h3 className="text-3xl text-center font-semibold my-5 text-black mx-auto">
+          Loading project...
+        </h3>
+      )}
     </section>
   )
 }

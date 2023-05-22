@@ -25,6 +25,6 @@ export default function Contact() {
       >
         <i className="fa-brands fa-linkedin-in"></i>
       </article>
-    </section >
+    </section>
   )
 }

@@ -9,11 +9,14 @@ import mongodbPng from '@/assets/mongodb.png'
 import muiPng from '@/assets/mui.png'
 import tailwindPng from '@/assets/tailwind.png'
 import reduxtoolkitPng from '@/assets/reduxtoolkit.png'
-import jestPng from "@/assets/jest.png"
+import jestPng from '@/assets/jest.png'
 
 export default function Skills() {
   return (
-    <section id="skills" className="w-full h-screen snap-center sm:p-8 p-4 overflow-auto scrollbar-hide block items-center justify-center sm:flex">
+    <section
+      id="skills"
+      className="w-full h-screen snap-center sm:p-8 p-4 overflow-auto scrollbar-hide block items-center justify-center sm:flex"
+    >
       <div>
         <h6 className="text-2xl text-center font-bold mb-3 text-black">
           My Skills
@@ -33,7 +36,9 @@ export default function Skills() {
                 className="mb-5 w-20 h-20 mx-auto flex-shrink-0"
               />
 
-              <p className="text-center text-black font-semibold">{skill.label}</p>
+              <p className="text-center text-black font-semibold">
+                {skill.label}
+              </p>
             </article>
           ))}
         </div>
