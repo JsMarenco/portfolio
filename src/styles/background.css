@@ -7,6 +7,7 @@
   left: 0;
   background-image: url("../assets/backgrounds/bg_hero.svg");
   @apply bg-top;
+  z-index: 1;
 }
 
 .app_bg:before {
@@ -15,7 +16,7 @@
   height: 100%;
   background: #000;
   position: fixed;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   left: 0;
   opacity: 0.3;
@@ -73,7 +74,7 @@
   height: 100%;
   perspective: 600px;
   -webkit-perspective: 600px;
-  z-index: 23;
+  z-index: 1;
 }
 
 .star-field .layer {

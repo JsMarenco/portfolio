@@ -25,18 +25,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className={montserrat.className}>
         <Providers>
           <div
-            className={"app_bg bg-black z-0 flex items-center justify-center"}
-          ></div>
-
-          <div
             className={
-              "h-screen w-full z-20 bg-transparent top-0 bottom-0 left-0 right-0 mx-auto"
+              "h-screen absolute w-full z-50 bg-transparent top-0 bottom-0 left-0 right-0 mx-auto"
             }
           >
             {children}
           </div>
 
-          <div className="star-field">
+          <div className={"app_bg bg-black"}></div>
+
+          <div className="star-field z-1">
             <div className="layer"></div>
             <div className="layer"></div>
             <div className="layer"></div>
