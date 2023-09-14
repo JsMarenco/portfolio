@@ -1,0 +1,16 @@
+{
+  "semi": false,
+  "trailingComma": "all",
+  "singleQuote": false,
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": [
+        "*.yml"
+      ],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
