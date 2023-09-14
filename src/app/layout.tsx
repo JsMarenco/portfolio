@@ -6,6 +6,8 @@ import { Montserrat } from "next/font/google"
 
 // Current project dependencies
 import "../styles/globals.css"
+import "../styles/background.css"
+import Providers from "@/context/Providers"
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -20,7 +22,28 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <Providers>
+          <div
+            className={"app_bg bg-black z-0 flex items-center justify-center"}
+          ></div>
+
+          <div
+            className={
+              "h-screen w-full z-20 bg-transparent top-0 bottom-0 left-0 right-0 mx-auto"
+            }
+          >
+            {children}
+          </div>
+
+          <div className="star-field">
+            <div className="layer"></div>
+            <div className="layer"></div>
+            <div className="layer"></div>
+            <div className="layer"></div>
+          </div>
+        </Providers>
+      </body>
     </html>
   )
 }
