@@ -8,6 +8,7 @@ import { Montserrat } from "next/font/google"
 import "../styles/globals.css"
 import "../styles/background.css"
 import Providers from "@/context/Providers"
+import ScrollTop from "@/components/Buttons/ScrollTop"
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -40,6 +41,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <div className="layer"></div>
             <div className="layer"></div>
           </div>
+
+          <ScrollTop />
         </Providers>
       </body>
     </html>
