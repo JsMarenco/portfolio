@@ -8,7 +8,7 @@ import userLogo from "@/assets/user/logo.svg"
 const AboutMe = () => {
   return (
     <section className="container__base" id="about_me">
-      <h2 className="text-center text-white mb-4 font-medium text-xl">
+      <h2 className="text-center text-white mb-8 font-medium text-3xl">
         About me
       </h2>
 

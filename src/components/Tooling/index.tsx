@@ -67,7 +67,7 @@ const tools = [
 const Tooling = () => {
   return (
     <section className="container__base" id="tooling">
-      <h2 className="text-center text-white mb-4 font-medium text-xl">
+      <h2 className="text-center text-white mb-8 font-medium text-3xl">
         Tooling
       </h2>
 
