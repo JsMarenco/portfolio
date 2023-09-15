@@ -75,7 +75,7 @@ const Tooling = () => {
         {tools.map((tool, index) => (
           <div
             key={index}
-            className="border-2 p-3 text-white text-lg font-normal bg-black bg-opacity-90 z-40 border-dotted rounded-xl flex items-center justify-center gap-2"
+            className="border-2 border-opacity-70 border-gray-600 p-3 text-white text-lg font-normal bg-black z-40 border-dotted rounded-xl flex items-center justify-center gap-2"
           >
             <span>{tool.icon}</span>
             <span className="hidden md:flex">{tool.name}</span>

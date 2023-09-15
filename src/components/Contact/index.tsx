@@ -41,8 +41,9 @@ const Contact = () => {
             key={index}
             aria-label={`JsManrenco link to ${link.label}`}
             role="link"
+            target="_blank"
           >
-            <article className="shadow-lg p-6 flex items-center justify-center gap-3 rounded-xl bg-[#091530] hover:bg-[#454545] shadow-slate-950 border-2 text-white text-lg font-normal border-dotted">
+            <article className="shadow-lg p-6 flex items-center justify-center gap-3 rounded-xl bg-[#091530] hover:bg-[#454545] shadow-slate-950 border-gray-400 border-opacity-70 border-3 text-white text-lg font-normal border-dotted">
               <span>{link.icon}</span>
               <span className="hidden sm:flex">{link.label}</span>
             </article>
