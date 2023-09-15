@@ -6,6 +6,7 @@
 import Hero from "@/components/Hero"
 import AboutMe from "@/components/AboutMe"
 import Tooling from "@/components/Tooling"
+import Contact from "@/components/Contact"
 
 const Home = () => {
   return (
@@ -23,9 +24,10 @@ const Home = () => {
           </svg>
         </div>
 
-        <div className="bg-[#050E24] py-12 flex items-center justify-center gap-7 flex-col w-full">
+        <div className="bg-[#050E24] py-12 flex items-center justify-center gap-24 flex-col w-full">
           <AboutMe />
           <Tooling />
+          <Contact />
         </div>
       </main>
     </>
