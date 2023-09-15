@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container__base {
-  @apply rounded-xl p-4 max-w-3xl z-30 block shadow-lg bg-[#1A1D22] shadow-slate-950 mx-auto w-[90%];
+  @apply rounded-xl p-4 max-w-3xl z-30 block shadow-lg bg-[#091530] shadow-slate-950 mx-auto w-[90%];
 }
 
 .effect__glass {
