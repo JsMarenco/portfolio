@@ -29,7 +29,7 @@ const links = [
 
 const Contact = () => {
   return (
-    <section className="rounded-xl max-w-3xl z-30 mx-auto w-[90%]" id="contact">
+    <section className="rounded-xl max-w-4xl z-30 mx-auto w-[90%]" id="contact">
       <h2 className="text-center text-white mb-4 font-medium text-xl">
         Contact
       </h2>
