@@ -30,9 +30,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "JsMarenco | portfolio",
     url: "",
-    images: ["/screens/home.png"],
+    images: ["/assets/screens/home.png"],
   },
   manifest: "/manifest.json",
+  icons: {
+    icon: "/assets/icons/icon-192x192.png",
+    apple: "/assets/icons/icon-192x192.png",
+  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
