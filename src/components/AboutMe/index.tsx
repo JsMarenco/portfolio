@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi"
 
 // Current project dependencies
 import userLogo from "@/assets/user/logo.svg"
+import Link from "next/link"
 
 const AboutMe = () => {
   return (
@@ -29,9 +30,11 @@ const AboutMe = () => {
             minus!
           </p>
 
-          <Button variant="solid" endContent={<FiDownload />}>
-            Download CV
-          </Button>
+          <Link href={"/assets/cv/Angel_Marenco_Full_ Stack_EN.pdf"} download>
+            <Button variant="solid" endContent={<FiDownload />}>
+              Download CV
+            </Button>
+          </Link>
         </div>
       </article>
     </section>
