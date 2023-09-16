@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // Third-party dependencies
 import { Button, Image } from "@nextui-org/react"
 import { FiDownload } from "react-icons/fi"
@@ -23,12 +24,20 @@ const AboutMe = () => {
         </div>
 
         <div className="justify-center gap-3 flex-col">
-          <p className="text-md font-normal max-w-lg text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, modi.
-            Mollitia voluptates sequi ea cupiditate fuga. Corporis veritatis
-            dignissimos, quo recusandae odit expedita a eius libero ea ipsam ex
-            minus!
-          </p>
+          <div className="flex items-center justify-center gap-3 flex-col">
+            <p className="text-md font-normal max-w-lg text-white block">
+              Hello, I'm Angel Marenco, a full stack developer with two years of
+              experience. I specialize in ReactJS, NextJS, and TypeScript and
+              enjoy creating and maintaining web applications. When I'm not
+              working, I enjoy constantly improving my skills.
+            </p>
+
+            <p className="text-md font-normal max-w-lg text-white block">
+              In my free time, I'm happy to share my expertise in both areas to
+              help others. In the future, I plan to continue expanding my
+              programming knowledge.
+            </p>
+          </div>
 
           <Link href={"/assets/cv/Angel_Marenco_Full_ Stack_EN.pdf"} download>
             <Button variant="solid" endContent={<FiDownload />}>
