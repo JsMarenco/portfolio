@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // Third-party dependencies
-import { Button, Image } from "@nextui-org/react"
+import { Image } from "@nextui-org/image"
+import { Button } from "@nextui-org/button"
 import { FiDownload } from "react-icons/fi"
 
 // Current project dependencies

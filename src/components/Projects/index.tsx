@@ -1,5 +1,6 @@
 // Third-party dependencies
-import { Button, Image } from "@nextui-org/react"
+import { Image } from "@nextui-org/image"
+import { Button } from "@nextui-org/button"
 import Link from "next/link"
 import { FiArrowRight } from "react-icons/fi"
 

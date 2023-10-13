@@ -1,6 +1,6 @@
 // Third-party dependencies
 import Link from "next/link"
-import { Button } from "@nextui-org/react"
+import { Button } from "@nextui-org/button"
 import { FiArrowRight, FiMail } from "react-icons/fi"
 
 // Current project dependencies

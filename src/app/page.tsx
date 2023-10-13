@@ -1,5 +1,3 @@
-"use client"
-
 // Third-party dependencies
 
 // Current project dependencies
