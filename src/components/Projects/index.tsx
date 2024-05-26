@@ -7,6 +7,8 @@ import { FiArrowRight } from "react-icons/fi"
 // Current project dependencies
 import pjNifafeis from "@/assets/projects/pj_nikafeis.png"
 import pjClipCraftAI from "@/assets/projects/pj_clipcraftai.png"
+import pjPomodoro from "@/assets/projects/pj_pomodoro.png"
+import pjNasa from "@/assets/projects/pj_nasa.png"
 
 const projects = [
   {
@@ -22,6 +24,18 @@ const projects = [
     demo: "https://clip-craft-ai.vercel.app/",
     description:
       "is an automated video creator powered by AI and web scraping. Transforming TikTok content into engaging videos has never been easier.",
+  },
+  {
+    preview: pjPomodoro.src,
+    name: "Pomodoro",
+    demo: "https://pomodoro.jsmarenco.dev/",
+    description: "Boost your productivity with Pomodoro Technique.",
+  },
+  {
+    preview: pjNasa.src,
+    name: "Nasa",
+    demo: "https://nasa.jsmarenco.dev/",
+    description: "Discover the Wonders of the Universe.",
   },
 ]
 
